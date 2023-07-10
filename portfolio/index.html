@@ -1,0 +1,202 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa fa-times" aria-hidden="true" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa fa-bars" aria-hidden="true" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                
+                <p>Web developer</p>
+                <h1>Hi, I'm <span>Haritha</span></h1>
+
+            </div>
+        </div>
+    </div>
+    
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png">
+
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        A 4th year Computer Science undergraduate at Sastra University. I have finished my ML specialization, skilled in Web Development and Data Structures.Currently working on full stack projects. 
+                        I am fast learner and always passionate to learn something new to contribute to the tech industries. <br><br>
+                        <hr><br>Open to new challenges and ready 
+                        to take the next step in my career journey!!.</p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('Education')">Education</p>
+                            <p class="tab-links" onclick="opentab('Skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="Education" >
+                            <ul>
+                                <li><span>2020-Current</span><br>Sastra University - B.Tech [8.1278 CGPA]</li>
+                                <li><span>2018-2020</span><br>Sri Chaitanya Academy - Intermediate [97.6%]</li>
+                                <li><span>2017-2018</span><br>High School - [10 CGPA]</li>
+                                
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Skills">
+                            <ul>
+                                <li><span>Languages</span><br>C, C++, Python, HTML/CSS, JS, SQL</li>
+                                <li><span>Web Technologies</span><br>ReactJs, NodeJs, Spring Boot</li>
+                                <li><span>Databases</span><br>MongoDB, Mysql</li>
+                                <li><span>Interpersonal Skills</span><br>Problem Solving, Communication, Leadership</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="tab-contents" id="Experience">
+                            <ul>
+                                <li><span>Web Developer Intern</span><br>Oasis Infobyte</li>
+                                <li><span>Core Team Member</span><br>Computer Society of India</li>
+                                <li><span>Competitive Problem Solver</span><br>Solved 500+ problems at Geeks for Geeks and Leetcode</li>
+                                <li><span>Workshop Coordinator</span><br>Team Daksh Sastra</li>
+                               
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+<!---------projects------>
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>BLE based Smart Contact Tracing</h3>
+                    <p>Application which automatically detects the close contacts 
+                        and classifies them as high and low risk </p>
+                    <a href="https://github.com/harii-2307/ble-based-smart-contact-tracing.git"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+
+                </div>
+            </div>
+            <div class="work">
+                    <img src="images/work-2.png" width:650 height:800>
+                    <div class="layer">
+                            <h3>Pizza delivery Application</h3>
+                            <p>Full stack pizza delivery app, which helps to order pizzas online </p>
+                            <a href="https://github.com/harii-2307/MERN-PIZZA.git"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+        
+                        </div>
+            </div>
+            <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                            <h3>Credit card fraud detection</h3>
+                            <p>This helps to find whether certain credit card transaction is legit or fraud </p>
+                            <a href="https://github.com/harii-2307/credit-card-fraud-detection.git"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+        
+                        </div>
+            </div>
+
+            
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-------Contact-------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa fa-envelope" aria-hidden="true"></i>harizz2307@gmail.com</p>
+                <p><i class="fa fa-phone-square" aria-hidden="true"></i>9392399297</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/haritha-kuruba-a17503252/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                    <a href="https://github.com/harii-2307"><i class="fa fa-github-square" aria-hidden="true"></i></a>
+                    <a href="https://www.instagram.com/hariis_2307/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+
+                </div>
+                <a href="images/my-resume.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+
+            </div>
+        </div>
+
+    </div>
+    <div class="copyright">
+        <p><i class="fa fa-copyright" aria-hidden="true"></i> Haritha : Copyright 2023. All Rights Reserved</p>
+    </div>
+</div>
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+            
+
+        }
+    </script>
+    <script>
+    var sidemenu=document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+    function closemenu(){
+        sidemenu.style.right="-200px";
+    }
+    </script>
+   <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxHX2LvocJOPpN84vV6LKOsu0DB31Ccx3hUlPy9ejejccthls-O6YwiOlvVo1cH2Xc/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg=document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
